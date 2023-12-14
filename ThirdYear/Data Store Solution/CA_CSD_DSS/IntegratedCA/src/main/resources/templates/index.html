@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+ INTEGRATED CA - DATA STORAGE SOLUTIONS / COMMERCIAL SOLUTIONS DESIGN
+ * Xiaohui Weng - 2020387  
+ * Leisly Pino 2020303 
+ * Yuri Ribeiro 2020347
+ -->
+<!-- Thymeleaf -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title> Domestic flights </title>
+	<!-- links the stylesheet to Thymeleaf  -->
+	<link rel="stylesheet" href="style.css" th:href="@{/style.css}" />
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/index" th:href="@{/index}">Home</a></li>
+			<li><a href="/newFlight.html" th:href="@{/index/newFlight}">New Flight</a></li>
+			<li><a th:href="@{/index/search}">Search Flight</a></li>
+		</ul>
+	</nav>
+	<div>
+		<div>
+			<h1>Domestic flights 2016 - 2018 </h1>
+			<h2>The Dataset information of flights between 2016 and 2018</h2>
+		</div>
+		<!-- displays the messages created in the controller -->
+		<div th:if="${searchMessage}">
+			<h3>
+				<p th:text="${searchMessage}" class="search-message"></p>
+			</h3>
+		</div>
+		<div th:if="${AddedMessage}">
+			<h3>
+				<p th:text="${AddedMessage}" class="added-message"></p>
+			</h3>
+		</div>
+		<div th:if="${updateMessage}">
+			<h3>
+				<p th:text="${updateMessage}" class="update-message"></p>
+			</h3>
+		</div>
+
+		<div th:if="${deleteMessage}">
+			<h3>
+				<p th:text="${deleteMessage}" class="delete-message"></p>
+			</h3>
+		</div>
+     <!--table of Flights -->
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Year</th>
+					<th>Month</th>
+					<th>Day of month</th>
+					<th>Departure Time</th>
+					<th>Scheduled Departure Time</th>
+					<th>Arrival Time</th>
+					<th>Scheduled Arrival Time</th>
+					<th>Origin</th>
+					<th>Destination</th>
+					<th>Distance</th>
+					<th> </th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr th:each="flights : ${flights}">
+					<td th:text="${flights._id}">ID</td>
+					<td th:text="${flights.Year}">Year</td>
+					<td th:text="${flights.Month}">Month</td>
+					<td th:text="${flights.DayofMonth}">Day of month</td>
+					<td th:text="${flights.DepTime}">Departure Time</td>
+					<td th:text="${flights.CRSDepTime}">CRS Departure Time</td>
+					<td th:text="${flights.ArrTime}">Arrive Time</td>
+					<td th:text="${flights.CRSArrTime}">CRS Arrive Time</td>
+					<td th:text="${flights.Origin}">Origin</td>
+					<td th:text="${flights.Dest}">Destination</td>
+					<td th:text="${flights.Distance}">Distance</td>
+					<td>
+						<a th:href="@{/index/update/{_id}(_id=${flights._id})}">Update</a>
+						<a th:href="@{/index/{_id}(_id=${flights._id})}">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+<!-- Pagination -->
+	<a th:if="${currentPage < totalPages - 1}"
+		th:href="@{/index(page=${currentPage + 1}, query=${searchQuery})}">Next</a>
+	<a th:if="${currentPage > 0}" th:href="@{/index(page=${currentPage - 1}, query=${searchQuery})}">Previous</a>
+</body>
+
+
+</html>

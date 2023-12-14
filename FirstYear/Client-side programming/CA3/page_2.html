@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTINOUOS ASSESMENT 3</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <link rel="stylesheet" href=".\css\main.css">
+    </head>
+    <!--MENU, NAME RESTAURANT AND DIRECTION TO PAGE 2-->
+    <body>
+        <nav>
+            <ul>
+              <li>
+                <a href="index.html">Mexican Couisine</a>
+              </li>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="page_2.html">Services</a>
+              </li>
+            </ul>
+          </nav>
+          <!--Call the function to made canvas-->
+          <div id="main-cointainer">
+            <h1>Canvas</h1><br> 
+            <canvas id="myChart" width="400" height="400"></canvas>
+                <button id="getCanvas">Get Canvas</button>
+        </div>
+        <!--Student Information-->
+    <div id="main-cointainer">
+        <p align="center">
+           Leisly Pino Duran<br>
+           2020303 
+        </p>
+    </div>
+<body>
+<script>
+  
+     /* Function to made canvas */
+function getcanvas() {
+    var ctx= document.getElementById("myChart").getContext("2d");
+    var myChart= new Chart(ctx,{
+    type:"pie",
+    data:{
+    labels:['Starters','Main','Dessert', 'Drink'],
+    datasets:[{
+    label:'Num datos', 
+    data:[5, 5, 4, 5], 
+    backgroundColor:[
+    'rgba(117, 206, 34, 0.664)','rgba(69, 82, 199, 0.658)','rgba(200, 55, 219, 0.658)', 'rgba(35, 190, 196, 0.63)']
+    }]
+    },
+    options:{
+    scales:{
+    yAxes:[{
+    ticks:{
+    beginAtZero:true
+    }
+    }]
+    }
+    }
+    });
+}
+document.getElementById("getCanvas").addEventListener('click', getcanvas);
+</script>
+</body>
+</html>

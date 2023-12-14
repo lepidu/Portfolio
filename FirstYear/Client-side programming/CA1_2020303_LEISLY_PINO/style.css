@@ -1,0 +1,215 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+} 
+#body {
+	background-color: #000000;
+	background-position: left top;
+	margin-left: auto;
+	margin-left: auto;
+}
+#site_name {
+	background-color: black;
+	height: 58px;
+	width: 350px;
+}
+.site_name{
+	color: white;
+	font-size: 21px;
+	font-family: "century Gothic";
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.site_name a{
+	text-decoration: none;
+	color: white;
+}
+.site_name a: hover{
+	text-decoration: none;
+	color: white;
+}
+
+.top-nav {
+	background-color:black;
+	height: 58px;
+	width: 626px;
+}
+.top-nav ul {
+	margin: 0;
+	list-style: none;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+
+.top-nav li {
+	display: inline;
+}
+.top-nav a {
+	background-image: url(button.png);
+	height: 42px;
+	width: 107px;
+	font-family: "century Gothic";
+	font-size: 16px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+	text-align: center;
+	background-repeat: no-repeat;
+	padding-right: 15px;
+	line-height: 2.3;
+}
+
+.top-nav a:hover {
+	width: 107px;
+	height: 42px;
+	color: black;
+	background: url(images/button_hover.png);
+	background-repeat: no-repeat;
+	padding-right: 15px;
+}
+#footer {
+	background-color: black;
+	height: 50px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+#header {
+	background-color:darkgoldenrod;
+	height: 255px;
+	padding-top: 100px;
+}
+.html{
+	background: darkgoldenrod;
+	background-image: url("html.png");
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	border: none;
+	margin-right: 70px;
+	padding-top: 10px;
+	width: 120px;
+	height:168px;
+	transition: all 0.5s;
+	cursor: pointer;
+	   }
+.html:hover
+	   {
+		width: 125px;
+		height: 175px;
+	   
+}
+.css{
+	background: darkgoldenrod;
+	background-image: url("css.png");
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	margin-right: 70px;
+	border: none;
+	padding-top: 10px;
+	width: 120px;
+	height:168px;
+	transition: all 0.5s;
+	cursor: pointer;
+	   }
+.css:hover
+	   {
+		width: 125px;
+		height: 175px;
+	   
+}
+.js{
+	background: darkgoldenrod;
+	background-image: url("js.png");
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	border: none;
+	padding-top: 10px;
+	width: 120px;
+	height:168px;
+	transition: all 0.5s;
+	cursor: pointer;
+	   }
+.js:hover
+	   {
+		width: 125px;
+		height: 175px;
+	   
+}
+.style1 {
+	color: #FFFFFF;
+	font-family: "century Gothic";
+	text-align: left;
+}
+#content {
+	background-color: whitesmoke;
+	height:650px;
+}
+.title {
+	font-family: "century Gothic";
+	color: #000000;
+	font-size: 22px;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+.image2{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+.content{
+	font-family: "century Gothic";
+	font-size: 16px;
+	text-align: justify;
+	color: black;
+	padding-left: 249px;
+	width: 950px;
+}
+.content2{
+	font-family: "century Gothic";
+	font-size: 16px;
+	text-align: justify;
+	color: black;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 950px;
+}
+.footer {
+	color: #FCFCFC;
+	font-size: 18px;
+	text-align: center;
+	font-family: "century Gothic";
+	padding-top: 10px;
+}
+#ffl {
+	background-color:black;
+	height: 58px;
+}
+
+.button{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-family: "century Gothic";
+	background: darkgoldenrod ;
+	background-position: center;
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 150px;
+	height:70px;
+	transition: all 0.5s;
+	cursor: pointer;
+}

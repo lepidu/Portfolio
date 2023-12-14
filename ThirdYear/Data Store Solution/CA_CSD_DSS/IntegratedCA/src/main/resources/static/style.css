@@ -1,0 +1,143 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(130, 74, 175);
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: white;
+	color: #4A235A;
+}
+
+.first {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+h1 {
+	color: #5B2C6F;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+}
+
+h3 {
+
+	color: red;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+th {
+	background-color: #5B2C6F;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+td {
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 2px solid #6C3483;
+	font-size: 14px;
+	align-items: center;
+}
+
+tr:hover {
+	background-color: #D7BDE2;
+
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	padding: 10px;
+	color: black;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-color: blue;
+}
+
+img {
+	width: 80px;
+	height: 100px;
+}
+
+button {
+	background-color: white;
+	border: 2px solid #4A235A;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+}
+
+button:hover {
+	background-color: #4A235A;
+	color: white;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.form-group {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #e5d5ec;
+	padding: 30px 50px 30px 50px;
+}
+
+.form-body {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.button-save {
+	padding-top: 30px;
+}

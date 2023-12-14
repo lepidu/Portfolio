@@ -1,0 +1,281 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CONTINOUOS ASSESMENT 3</title>
+        <link rel="stylesheet" href=".\css\main.css">
+    </head>
+    <!--MENU, NAME RESTAURANT AND DIRECTION TO PAGE 2-->
+    <body>
+        <nav>
+            <ul>
+              <li>
+                <a href="index.html">Mexican Couisine</a>
+              </li>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="page_2.html">Page 2</a>
+              </li>
+            </ul>
+          </nav>
+
+        <!--Part 1 Password-->
+        <div id="main-cointainer">
+            <form action="" method="POST" id="form">
+            <div class="form">   
+            <h1>Staff Password Validator</h1>
+            <div class="grupo">
+                <input type="text" id="password"><span class="barra"> </span>
+                <label for="">Password</label>
+            </div>
+            <button type="submit">Check Password</button>
+            <p class="warnings" id="warnings"></p>
+            </div>
+            </form>
+        </div>
+
+        <!--Part 2 Random Users-->
+        <div id="main-cointainer">
+            <h1>Customers</h1><br> 
+            <div id="output"></div>
+                <button id="getUsers">Get Random Users</button>
+        </div>
+        <!--Part 3 Menu options-->
+        
+        <div id="main-cointainer">
+            <h1>Starters</h1><br>
+            <table class="container">
+                <thead>
+                    <tr>
+                        
+                        <th><h1>Name</h1></th>
+                        <th><h1>Description</h1></th>
+                        <th><h1>Amount</h1></th>
+                        <th><h1>Costs</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Churritos Botaneros (Vegetarian)</td>
+                        <td>Mexican snack with pico de gallo</td>
+                        <td><input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="3.00" class="starters"></td>
+                        <td> €3.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Esquite</td>
+                        <td>Corn with butter and chillie powder</td>
+                        <td><input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="4.00" class="starters"></td>
+                        <td> €4.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Nachos (Vegetarian)</td>
+                        <td>Nachos plain with guacamole</td>
+                        <td><input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="7.00" class="starters"></td>
+                        <td> €7.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Chilaquiles</td>
+                        <td>Tortillas lightly fried with red salsa</td>
+                        <td><input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="9.00" class="starters"></td>
+                        <td> €9.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Enchiladas verdes</td>
+                        <td>3 Filled Tortilla with chicken in green sauce</td>
+                        <td><input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="11.00" class="starters"></td>
+                        <td> €11.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><h1>Main</h1><br>
+            <table class="container">
+                <thead>
+                    <tr>
+                      
+                        <th><h1>Name</h1></th>
+                        <th><h1>Description</h1></th>
+                        <th><h1>Amount</h1></th>
+                        <th><h1>Costs</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Burrito</td>
+                        <td>Flour tortilla with mexican rice, pinto beans, beef and guacamole.</td>
+                        <td><input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="8.00" class="main"></td>
+                        <td> €8.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Gringa (Vegetarian)</td>
+                        <td>Tortilla with veggie mix and cheese.</td>
+                        <td><input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="9.00" class="main"></td>
+                        <td> €9.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Torta</td>
+                        <td>Bread spread with fried beans, guacamole and beef.</td>
+                        <td><input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="10.00" class="main"></td>
+                        <td> €10.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Tostadota (Vegetarian)</td>
+                        <td>Hard tortilla, fried beans, cactus(nopales), fresh cheese and salsa</td>
+                        <td><input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="11.00" class="main"></td>
+                        <td> €11.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Tacos (each)</td>
+                        <td>Small soft tortilla with beef, onion and coriander on top.</td>
+                        <td><input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="2.00" class="main"></td>
+                        <td> €2.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><h1>Desserts</h1><br>
+            <table class="container">
+                <thead>
+                    <tr>
+                        
+                        <th><h1>Name</h1></th>
+                        <th><h1>Description</h1></th>
+                        <th><h1>Amount</h1></th>
+                        <th><h1>Costs</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Impossible cake</td>
+                        <td>Chocolate cake with creme caramel.</td>
+                        <td><input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="4.00" class="dess"></td>
+                        <td> €4.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Avocado pie</td>
+                        <td>Biscuit base filled with Avocado cream cheese.</td>
+                        <td><input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="4.00" class="dess"></td>
+                        <td> €4.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Fried ice cream</td>
+                        <td>Breaded scoop of ice cream (Vanilla/Strawberry) deep fried.</td>
+                        <td><input name="qnt_13" type="text" id="qnt_13" value="0" size="3" data-price="5.00" class="dess"></td>
+                        <td> €5.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Pay de queso</td>
+                        <td>Mexican cheesecake</td>
+                        <td><input name="qnt_14" type="text" id="qnt_14" value="0" size="3" data-price="6.00" class="dess"></td>
+                        <td> €6.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><h1>Drinks</h1><br>
+            <table class="container">
+                <thead>
+                    <tr>
+                        
+                        <th><h1>Name</h1></th>
+                        <th><h1>Description</h1></th>
+                        <th><h1>Amount</h1></th>
+                        <th><h1>Costs</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Chelada</td>
+                        <td>Beer, lime, salt.</td>
+                        <td><input name="qnt_15" type="text" id="qnt_15" value="0" size="3" data-price="6.00" class="drinks"></td>
+                        <td> €6.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Michelada</td>
+                        <td>Beer, lime, Worcestershire sauce, salt and maggie sauce.</td>
+                        <td><input name="qnt_16" type="text" id="qnt_16" value="0" size="3" data-price="7.00" class="drinks"></td>
+                        <td> €7.00</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Sangria </td>
+                        <td>Mexican soda.</td>
+                        <td><input name="qnt_17" type="text" id="qnt_17" value="0" size="3" data-price="3.00" class="drinks"></td>
+                        <td> €3.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Corona</td>
+                        <td>Mexican beer.</td>
+                        <td><input name="qnt_18" type="text" id="qnt_18" value="0" size="3" data-price="5.00" class="drinks"></td>
+                        <td> €5.00</td>
+                    </tr>
+                <tr>
+                        
+                        <td>Hibiscus</td>
+                        <td>Herbs infusion</td>
+                        <td><input name="qnt_19" type="text" id="qnt_19" value="0" size="3" data-price="3.00" class="drinks"></td>
+                        <td> €3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><h1>Bill</h1><br>
+            <table class="container">
+                <tbody>
+                    <tr>
+                        <td>Total bill:</td>
+                        <td><p id="total_bill"></td>
+                    </tr>
+                    <tr>
+                        <td>Starters:</td>
+                        <td><p id="starters"></td>
+                    </tr>
+                    <tr>
+                        <td>Main:</td>
+                        <td><p id="main"></td>
+                    </tr>
+                    <tr>
+                        <td>Dessert:</td>
+                        <td><p id="dessert"></td>
+                    </tr>
+                    <tr>
+                        <td>Drinks:</td>
+                        <td><p id="drinks"></td>
+                    </tr>
+                    <tr>
+                        <td>Vegetarian cost:</td>
+                        <td><p id="veg_cost"></td>
+                    </tr>
+                    <tr>
+                        <td>Non-vegetarian cost:</td>
+                        <td><p id="non_veg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="getCost">Calculate</button>
+        
+    </div>
+    <!--Student Information-->
+    <div id="main-cointainer">
+        <p align="center">
+           Leisly Pino Duran<br>
+           2020303 
+        </p>
+    </div>
+        <script src=".\js\jquery.js"></script>
+    </body>
+</html>

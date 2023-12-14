@@ -1,0 +1,18 @@
+List: 
+Mr. Bruno, M.
+Worker
+Ms. Cuellar, D.
+College
+Mx. Cruz, R.
+Retired
+Mr. Reddin, M.
+School
+Ms. Pino, L.
+School
+Mr. Hill, A.
+It is an invalid number
+It is an invalid gender 
+Snell, F.
+Retired
+Ms. The name have diferrent characteres 
+School

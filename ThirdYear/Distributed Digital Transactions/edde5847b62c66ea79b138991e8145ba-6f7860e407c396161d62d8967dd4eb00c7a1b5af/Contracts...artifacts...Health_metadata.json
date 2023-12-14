@@ -1,0 +1,185 @@
+{
+	"compiler": {
+		"version": "0.4.16+commit.d7661dd9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"name": "_publicPass",
+						"type": "uint256"
+					}
+				],
+				"name": "addPeople",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_publicPass",
+						"type": "uint256"
+					},
+					{
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "changeAge",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "peopleData",
+				"outputs": [
+					{
+						"name": "adr",
+						"type": "address"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"name": "diseases",
+						"type": "string"
+					},
+					{
+						"name": "medication",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newPublicPass",
+						"type": "uint256"
+					},
+					{
+						"name": "_oldPublicPass",
+						"type": "uint256"
+					}
+				],
+				"name": "changePublicPass",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_publicPass",
+						"type": "uint256"
+					}
+				],
+				"name": "purchasedMedication",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_publicPass",
+						"type": "uint256"
+					},
+					{
+						"name": "_medication",
+						"type": "string"
+					}
+				],
+				"name": "addMedication",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_publicPass",
+						"type": "uint256"
+					},
+					{
+						"name": "_diseases",
+						"type": "string"
+					}
+				],
+				"name": "addDisease",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/Health.sol": "Health"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/Health.sol": {
+			"keccak256": "0x4a46bdea6b72b229bf668922a21eea8d387222419d33104162a78eb1fa5422a8",
+			"urls": [
+				"bzzr://66908ca2644363857e9633a34c2be1c880e695937bd75463631c40dac1d4fff3"
+			]
+		}
+	},
+	"version": 1
+}

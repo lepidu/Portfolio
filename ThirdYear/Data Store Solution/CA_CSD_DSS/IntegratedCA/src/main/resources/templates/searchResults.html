@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+ INTEGRATED CA - DATA STORAGE SOLUTIONS / COMMERCIAL SOLUTIONS DESIGN
+ * Xiaohui Weng - 2020387  
+ * Leisly Pino 2020303 
+ * Yuri Ribeiro 2020347
+ -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title>Search Results</title>
+	<link rel="stylesheet" href="style.css" th:href="@{/style.css}" />
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li><a th:href="@{/index}">Home</a></li>
+			<li><a th:href="@{/index/newFlight}">New Flight</a></li>
+			<li><a th:href="@{/index/search}">Search Flight</a></li>
+		</ul>
+		<h1>Search Results</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Year</th>
+					<th>Month</th>
+					<th>Day of month</th>
+					<th>Departure Time</th>
+					<th>Scheduled Departure Time</th>
+					<th>Arrival Time</th>
+					<th>Scheduled Arrival Time</th>
+					<th>Origin</th>
+					<th>Destination</th>
+					<th>Distance</th>
+					<th> </th>
+				</tr>
+			</thead>
+			<tbody>
+				<td th:text="${flight._id}">ID</td>
+				<td th:text="${flight.Year}">Year</td>
+				<td th:text="${flight.Month}">Month</td>
+				<td th:text="${flight.DayofMonth}">Day of month</td>
+				<td th:text="${flight.DepTime}">Departure Time</td>
+				<td th:text="${flight.CRSDepTime}">CRS Departure Time</td>
+				<td th:text="${flight.ArrTime}">Arrive Time</td>
+				<td th:text="${flight.CRSArrTime}">CRS Arrive Time</td>
+				<td th:text="${flight.Origin}">Origin</td>
+				<td th:text="${flight.Dest}">Destination</td>
+				<td th:text="${flight.Distance}">Distance</td>
+				<td>
+					<a th:href="@{/index/update/{_id}(_id=${flight._id})}">Update</a>
+					<a th:href="@{/index/{_id}(_id=${flight._id})}">Delete</a>
+				</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+ INTEGRATED CA - DATA STORAGE SOLUTIONS / COMMERCIAL SOLUTIONS DESIGN
+ * Xiaohui Weng - 2020387  
+ * Leisly Pino 2020303 
+ * Yuri Ribeiro 2020347
+ -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title> New Flight </title>
+	<link rel="stylesheet" href="style.css" th:href="@{/style.css}" />
+</head>
+
+<body>
+
+	</form>
+
+	<div>
+		<ul>
+			<li><a th:href="@{/index}">Home</a></li>
+			<li><a th:href="@{/index/newFlight}">New Flight</a></li>
+			<li><a th:href="@{/index/search}">Search Flight</a></li>
+		</ul>
+
+
+		<div>
+			<h1>Search Flight By ID</h1>
+		</div>
+		<div class="row">
+			<div class="form-body">
+				<form th:action="@{/search}" th:object="${flights}" method="GET">
+					<div class="form-group">
+						<label> ID: </label><br>
+						<input type="text" name="_ID" th:field="*{_id}" placeholder=" Insert Id" required> <br>
+						<div class="button-search">
+							<button>Search</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+</html>

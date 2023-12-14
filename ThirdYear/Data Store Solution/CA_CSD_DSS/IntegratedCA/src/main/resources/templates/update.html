@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+ INTEGRATED CA - DATA STORAGE SOLUTIONS / COMMERCIAL SOLUTIONS DESIGN
+ * Xiaohui Weng - 2020387  
+ * Leisly Pino 2020303 
+ * Yuri Ribeiro 2020347
+ -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title> Update Flight </title>
+	<link rel="stylesheet" href="style.css" th:href="@{/style.css}" />
+</head>
+
+<body>
+
+	<div>
+		<ul>
+			<li><a th:href="@{/index}">Home</a></li>
+			<li><a th:href="@{/index/newFlight}">New Flight</a></li>
+			<li><a th:href="@{/index/search}">Search Flight</a></li>
+		</ul>
+		<div>
+			<h1>Update Flight </h1>
+		</div>
+		<div class="row">
+			<div class="form-body">
+				<form th:action="@{/index/{_id}(_id=${flights._id})}" th:object="${flights}" method="POST">
+					<div class="form-group">
+						<label> Year: </label><br>
+						<input type="text" name="Year" th:field="*{Year}" placeholder=" Insert Year" required> <br>
+						<label> Month: </label><br>
+						<input type="text" name="Month" th:field="*{Month}" placeholder=" Insert Month" required> <br>
+						<label> Day of Month: </label><br>
+						<input type="text" name="DayofMonth" th:field="*{DayofMonth}" placeholder=" Insert Time"
+							required> <br>
+						<label> Departure Time: </label><br>
+						<input type="text" name="DepTime" th:field="*{DepTime}" placeholder=" Insert Time" required>
+						<br>
+						<label> Scheduled Departure Time: </label><br>
+						<input type="text" name="CRSDepTime" th:field="*{CRSDepTime}" placeholder=" Insert Time"
+							required> <br>
+						<label> Arrival Time: </label><br>
+						<input type="text" name="ArrTime" th:field="*{ArrTime}" placeholder=" Insert Time" required>
+						<br>
+						<label> Scheduled Arrival Time: </label><br>
+						<input type="text" name="CRSArrTime" th:field="*{CRSArrTime}" placeholder=" Insert Time"
+							required> <br>
+						<label> Origin: </label><br>
+						<input type="text" name="Origin" th:field="*{Origin}" placeholder=" Insert Origin" required>
+						<br>
+						<label> Destination: </label><br>
+						<input type="text" name="Dest" th:field="*{Dest}" placeholder=" Insert Destination" required>
+						<br>
+						<label> Distance: </label> <br>
+						<input type="text" name="Distance" th:field="*{Distance}" placeholder=" Insert Distance"
+							required> <br>
+
+						<div class="button-save">
+							<button>Update</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>
