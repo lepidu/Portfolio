@@ -18,4 +18,4 @@ I am enthusiastic about contributing my skills and knowledge to dynamic projects
 
 - Email: 2020303@student.cct.ie
 - [LinkedIn](https://www.linkedin.com/in/lepidu/)
-- [Website](Portfolio/index.html)
+- [Website](https://lepidu.github.io/)
